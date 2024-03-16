@@ -6,7 +6,7 @@ const port = 3000
 //   res.send('Hello World!')
 // })
 
-app.post('/v1/api/post', (req, res) => {
+app.get('/v1/api/post', (req, res) => {
   res.send('Got a POST request')
 })
 
