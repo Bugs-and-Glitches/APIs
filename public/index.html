@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>APIs - Bugs and Glitches Devloper Commnuity</title>
+    <meta name="description" content="Prism is a beautiful Bootstrap 4 template for open-source landing pages."/>
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+<!--Header Section-->
+<section class="pt-5 pb-6" style="background-color: #111;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-row align-items-center justify-content-between">
+                <div class="heading-brand text-white">APIs</div>
+                <a href="https://github.com/Bugs-and-Glitches" class="btn btn-light" target="_blank">Exploer</a>
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-8 mx-auto text-center text-white">
+                <h1 class="text-white">Public APIs</h1>
+                <p class="lead mb-5">Prism is a lightweight, extensible syntax highlighter, built with modern web
+                    standards in mind. It’s used in thousands of websites, including some of those you visit daily.</p>
+                <a href="https://github.com/iamprathameshmore" target="_blank" class="btn btn-success svg-icon">
+                    <em class="mr-2" data-feather="github"></em>
+                    Contributer
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-9 mx-auto">
+                <div class="code-window">
+                    <div class="dots">
+                        <div class="red"></div>
+                        <div class="orange"></div>
+                        <div class="green"></div>
+                    </div>
+                    <pre class="language-javascript line-numbers"><code class="language-javascript">import {DomSanitizer} from '@angular/platform-browser';
+import {Pipe, PipeTransform} from '@angular/core';
+
+import { icons } from 'feather-icons'; // v4+
+
+@Pipe({ name: 'feather' })
+export class FeatherIconsPipe implements PipeTransform {
+
+  constructor(private sanitizer: DomSanitizer) {}
+
+  transform(icon: string, size: number = 24, color: string = 'inherit') {
+    return this.sanitizer.bypassSecurityTrustHtml(icons[icon].toSvg({
+      width: size,
+      height: size,
+      color: color
+    }));
+  }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Features Section-->
+<!-- <section class="py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="text-center text-md-left">Reasons Why People Love <span class="text-success">Prism.js</span></h2>
+                <div class="row feature-grid">
+                    <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="check-circle" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Dead Simple
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="command" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Highly Intuitive
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="feather" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Light as a Feather
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="zap" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Blazing Fast
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="git-pull-request" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Extensible
+                            </div>
+                        </div>
+                    </div><div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="droplet" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Easy Styling
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<!--footer-->
+<footer class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.instagram.com/23bg.tech" target="_blank">Instagram</a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/bugs-and-glitches" target="_blank">LinkedIn</a></li>
+                    <li class="list-inline-item"><a href="https://chat.whatsapp.com/Ezk7dvAmBB25NgDQVveheS" target="_blank">Whatsapp</a></li>
+                    <li class="list-inline-item"><a href="https://discord.com/invite/vH6ze6Zb" target="_blank">Discord</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-4 mx-auto text-muted text-center small-xl">
+                &copy; 2024 APIs - Bug And Glitches
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
