@@ -6,7 +6,7 @@ const port = 3000
 //   res.send('Hello World!')
 // })
 
-app.post('/', (req, res) => {
+app.post('/v1/api/post', (req, res) => {
   res.send('Got a POST request')
 })
 
@@ -14,11 +14,11 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
-app.put('/user', (req, res) => {
+app.put('/v1/api/user', (req, res) => {
   res.send('Got a PUT request at /user')
 })
 
-app.delete('/user', (req, res) => {
+app.delete('/v1/api/user', (req, res) => {
   res.send('Got a DELETE request at /user')
 })
 
